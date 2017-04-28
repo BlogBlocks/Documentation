@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>IPYthon NoteBook</title>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+</head>
+
+
+<!--
+<style>
+html{
+	background-color: white;
+}
+body{
+	padding:30px;
+	border: 1px solid black;
+	background-color: #f2f2f2;
+}
+pre{
+	text-align: left;
+	font-size:12px;
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+      white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+      white-space: -pre-wrap;      /* Opera 4-6 */
+      white-space: -o-pre-wrap;    /* Opera 7 */
+      word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+}
+h1{
+	margin: 0 auto;
+	text-align: center;
+	color: gray;
+	padding-right:10%;
+	padding-left:10%;
+	width:80%;
+	background-color: lightyellow;
+	border: 1px solid gray;
+}
+h2{
+	text-align: center;
+	color: red;
+}
+p{
+	text-align: center;
+	color: navy;
+}
+
+#index{
+	margin: 0 auto;
+	padding-right:10%;
+	padding-left:10%;
+	padding-top:20px;
+	padding-bottom:20px;
+	border: 1px solid gray;
+	width:80%;
+	text-align: center
+}
+</style>
+-->
+<body>
+<h1>IPython Notebook Stuff</h1>
+<p>
+Processes, scripts, install records and general info about " Docker Stuff "
+</p>
+<div id = "index">
+<a href="#pulling">Pull a Docker Container</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#enter">Enter a Docker Container</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#open">Open and keep open a Docker Container</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href= "#anaconda">Installing Anaconda in a Container</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#problem">Problem starting Docker </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#server">Start a Server</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#dangling">List and Delete Dangling Images</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#inspect">Open an Image With prompt</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#mathjax">Installing MathJax in A Container</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="#remove">Remove All Exited Containers</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+</div>
+<div>
+<h2>Good  Funtioning  Docker Images</h2><br />
+
+
+
+---------------- file opencv.pc --------------
+prefix=/usr
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: opencv
+Description: The opencv library
+Version: 2.x.x
+Cflags: -I${includedir}/opencv -I${includedir}/opencv2
+Libs: -L${libdir} -lopencv_calib3d -lopencv_imgproc -lopencv_contrib -lopencv_legacy -l
+
+
+Ref: <a href="https://prateekvjoshi.com/2013/10/18/package-opencv-not-found-lets-find-it/">package-opencv-not-found-lets-find-it</a>

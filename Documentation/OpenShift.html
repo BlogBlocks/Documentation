@@ -1,0 +1,69 @@
+<html>
+
+
+<h2>MySQL 5.1 database added.  Please make note of these credentials:</h2><br />
+<p>
+&nbsp;&nbsp;Root User: adminvvzHcNF<br />
+&nbsp;&nbsp;Root Password: iyLCmG6hhipG<br />
+&nbsp;&nbsp;Database Name: deepdream<br /><br />
+
+Connection URL: mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/<br /><br />
+
+You can manage your new MySQL database by also embedding phpmyadmin.<br />
+The phpmyadmin username and password will be the same as the MySQL credentials above.<br />
+</p>
+
+<pre>
+jack@jack-desktop:~/Desktop$ cd deepdream.git
+jack@jack-desktop:~/Desktop/deepdream.git$ git add .
+jack@jack-desktop:~/Desktop/deepdream.git$ git commit -m 'First Push'
+[master 84bb7b4] First Push
+ 2 files changed, 308 insertions(+), 1 deletion(-)
+ create mode 100644 wsgi.py~
+jack@jack-desktop:~/Desktop/deepdream.git$ git push
+Counting objects: 3, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 340 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Stopping Python 2.7 cartridge
+remote: Waiting for stop to finish
+remote: Waiting for stop to finish
+remote: Building git ref 'master', commit 84bb7b4
+remote: Activating virtenv
+remote: Checking for pip dependency listed in requirements.txt file..
+remote: The directory '/var/lib/openshift/58c9bdd189f5cfbc1b0000c8/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+remote: You are using pip version 7.1.0, however version 9.0.1 is available.
+remote: You should consider upgrading via the 'pip install --upgrade pip' command.
+remote: The directory '/var/lib/openshift/58c9bdd189f5cfbc1b0000c8/.cache/pip/http' or its parent directory is not owned by the current user and the cache has been disabled. Please check the permissions and owner of that directory. If executing pip with sudo, you may want sudo's -H flag.
+remote: You must give at least one requirement to install (see "pip help install")
+remote: Running setup.py script..
+remote: running develop
+remote: running egg_info
+remote: creating YourAppName.egg-info
+remote: writing YourAppName.egg-info/PKG-INFO
+remote: writing top-level names to YourAppName.egg-info/top_level.txt
+remote: writing dependency_links to YourAppName.egg-info/dependency_links.txt
+remote: writing manifest file 'YourAppName.egg-info/SOURCES.txt'
+remote: reading manifest file 'YourAppName.egg-info/SOURCES.txt'
+remote: writing manifest file 'YourAppName.egg-info/SOURCES.txt'
+remote: running build_ext
+remote: Creating /var/lib/openshift/58c9bdd189f5cfbc1b0000c8/app-root/runtime/dependencies/python/virtenv/lib/python2.7/site-packages/YourAppName.egg-link (link to .)
+remote: Adding YourAppName 1.0 to easy-install.pth file
+remote: 
+remote: Installed /var/lib/openshift/58c9bdd189f5cfbc1b0000c8/app-root/runtime/repo
+remote: Processing dependencies for YourAppName==1.0
+remote: Finished processing dependencies for YourAppName==1.0
+remote: Preparing build for deployment
+remote: Deployment id is feeaf2e1
+remote: Activating deployment
+remote: Starting Python 2.7 cartridge (Apache+mod_wsgi)
+remote: Application directory "/" selected as DocumentRoot
+remote: Application "wsgi.py" selected as default WSGI entry point
+remote: -------------------------
+remote: Git Post-Receive Result: success
+remote: Activation status: success
+remote: Deployment completed with status: success
+To ssh://58c9bdd189f5cfbc1b0000c8@deepdream-northrup.rhcloud.com/~/git/deepdream.git/
+   1c51113..84bb7b4  master -> master
+<pre>
