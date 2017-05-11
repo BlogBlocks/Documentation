@@ -1,4 +1,7 @@
 #!/bin/bash
+# github link to raw file
+#https://raw.githubusercontent.com/BlogBlocks/Documentation/master/Documentation/install_caffe_16.04.sh
+
 
 set -v
 NUMBER_OF_CORES=2
